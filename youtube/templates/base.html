@@ -1,0 +1,14 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html>
+ <head>
+ <title>YouTube</title>
+ <meta charset="UTF-8">
+ <link rel="stylesheet" href="{% static 'youtube/example.css' %}"
+ </head>
+	<body>
+		<img src="{% static 'youtube/images/tux.jpg' %}" alt="My image"/>
+		{%block content%}
+		{%endblock content%}
+	</body>
+</html>
