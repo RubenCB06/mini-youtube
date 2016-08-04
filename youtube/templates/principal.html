@@ -1,7 +1,19 @@
 {%extends 'base.html'%}
-
+{% load staticfiles %}
 {%block content%}
-	<p>This is my first paragraph</p>
-	<p>This is my second paragraph</p>
-	<p>This is my third paragraph</p>
+	<div class="appbar">
+	</div>
+	<div class="page_container">
+			<a href=""><img class="video" src="{% static 'youtube/images/hqdefault.jpg' %}" alt="My image"/></a>
+			<a href=""><img class="video" src="{% static 'youtube/images/hqdefault2.jpg' %}" alt="My image"/></a>
+			<a href=""><img class="video" src="{% static 'youtube/images/hqdefault3.jpg' %}" alt="My image"/></a>
+			<a href=""><img class="video" src="{% static 'youtube/images/hqdefault4.jpg' %}" alt="My image"/></a> 
+			<a href=""><img class="video" src="{% static 'youtube/images/hqdefault5.jpg' %}" alt="My image"/></a>
+			<a class="description-v" href="" title="Carlos Vives, Shakira - La Bicicleta (Official Video)">Carlos Vives, Shakira - La Bicicleta (Official Video)</a>
+			<a class="description-v" href="" title="Carlos Vives, Shakira - La Bicicleta (Official Video)">Enrique Iglesias - DUELE EL CORAZON ft. Wisin</a>
+			<a class="description-v" href="" title="Carlos Vives, Shakira - La Bicicleta (Official Video)">Reik - Ya Me Enteré (Official Video)</a>
+			<a class="description-v" href="" title="Carlos Vives, Shakira - La Bicicleta (Official Video)">Pablo Alborán - La Escalera (Videoclip Oficial)</a>
+			<a class="description-v" href="" title="Carlos Vives, Shakira - La Bicicleta (Official Video)">Maite Perroni - "Adicta" (Video Oficial)</a>
+		
+	</div>
 {%endblock content%}	

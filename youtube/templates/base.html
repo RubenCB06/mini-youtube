@@ -1,13 +1,18 @@
 {% load staticfiles %}
 <!DOCTYPE html>
 <html>
- <head>
- <title>YouTube</title>
- <meta charset="UTF-8">
- <link rel="stylesheet" href="{% static 'youtube/example.css' %}"
- </head>
+ 	<head>
+ 		<title>YouTube</title>
+ 		<meta charset="UTF-8">
+ 		<link rel="stylesheet" href="{% static 'youtube/example.css' %}">
+ 	</head>
 	<body>
-		<img src="{% static 'youtube/images/tux.jpg' %}" alt="My image"/>
+		<div class="buscador">
+				<a href=""><img class="logo" src="{% static 'youtube/images/logo.jpg' %}" alt="My image"/></a>
+				<input class="search" type="text" placeholder="Buscar">
+				<button class="bsearch" type="submit"><img class="lobu" src="{% static 'youtube/images/buscar.gif' %}" alt="x" /></button>
+
+		</div>
 		{%block content%}
 		{%endblock content%}
 	</body>
