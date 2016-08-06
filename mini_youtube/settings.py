@@ -120,3 +120,8 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/1.9/howto/static-files/
 
 STATIC_URL = '/static/'
+
+# With this configuration, Django will look for static files in a folder named static inside each app and into the neurorehabilitation/static folder created.
+STATICFILES_DIRS = (
+    os.path.join(BASE_DIR, "static"),
+)
