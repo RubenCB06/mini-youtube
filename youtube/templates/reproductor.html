@@ -1,10 +1,9 @@
 {%extends 'base.html'%}
 {% load staticfiles %}
 {%block content%}
-	<iframe class="rvideo" width="854" height="480" src="https://www.youtube.com/embed/-UV0QGLmYys" frameborder="0" allowfullscreen></iframe>
+<iframe class="rvideo" width="854" height="480" src="{{video.url}}" frameborder="0" allowfullscreen></iframe>
 	<div class="detallev">
-		<h3 class="detalltit" title="Carlos Vives, Shakira - La Bicicleta (Official Video)">Carlos Vives, Shakira - La Bicicleta (Official Video)</h3>
+		<h3 class="detalltit" title="{{video.titulo}}">{{video.titulo}}</h3>
 	</div>
-
 {%endblock content%}
 

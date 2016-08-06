@@ -9,3 +9,12 @@ class PrincipalView(View):
 		context = {'videos':videos,}
 		#template_name = 'reproductor.html'
 		return render(request,template_name,context)
+
+class DetailView(View):
+	def get(self,request,slug):
+		template_name="reproductor.html"
+		video = Video.objects.get(slug = slug)
+		context = {
+			'video':video,
+		}
+		return render(request,template_name,context)
